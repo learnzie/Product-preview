@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grey {
+  color: #abaeb3;
+}
+.container {
+  background: #f3eae3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.design {
+  width: 45%;
+  margin: auto;
+  border-radius: 3%;
+  display: flex;
+  height: 70vh;
+}
+.image {
+  background: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  /* height: 100%; */
+  border-start-start-radius: 3%;
+  border-end-start-radius: 3%;
+}
+.perfume {
+  width: 50%;
+  /* height: 100%; */
+  padding: 2rem;
+  border-start-end-radius: 3%;
+  border-end-end-radius: 3%;
+  background: #fff;
+}
+h1 {
+  margin-block: 1.2rem;
+  font-weight: 800;
+}
+p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+button {
+  border: none;
+  background: #3d8168;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #fff !important;
+  padding: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.new-price {
+  color: #3d8168;
+}
+.sub-title {
+  letter-spacing: 0.3rem;
+}
+.original-price {
+  text-decoration: line-through;
+}
+@media (max-width: 1000px) {
+  .design {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .design {
+    display: block;
+  }
+  .image {
+    background: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30%;
+    /* height: 100%; */
+    border-start-start-radius: 3%;
+    border-start-end-radius: 3%;
+    border-end-start-radius: 0%;
+  }
+  .perfume {
+    width: 100%;
+    border-end-start-radius: 3%;
+    border-start-end-radius: 0%;
+    border-end-end-radius: 3%;
+  }
+}
